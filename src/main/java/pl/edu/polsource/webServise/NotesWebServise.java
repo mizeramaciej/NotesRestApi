@@ -8,7 +8,7 @@ import javax.ws.rs.Path;
 import javax.ws.rs.core.Response;
 import java.util.ArrayList;
 
-@Path("/notes")
+@Path("/")
 public class NotesWebServise {
     @GET
     public Response listNotes() {
