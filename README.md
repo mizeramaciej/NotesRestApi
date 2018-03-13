@@ -10,6 +10,7 @@ Used database:
 Setup database:
     1./bin/startNetworkServer
     2./bin/ij.bat
+    
         When creating:
             connect 'jdbc:derby://127.0.0.1/PolSource;create=true';
         When connecting:
