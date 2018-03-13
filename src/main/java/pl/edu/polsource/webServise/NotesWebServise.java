@@ -18,9 +18,9 @@ public class NotesWebServise {
     private String getAllTitles() {
         DBAccesor accesor = new DBAccesor();
         ArrayList<Notes> allNotes = accesor.getAllNotes();
-        String list = "All titles: ";
+        StringBuilder list = new StringBuilder("All titles: ");
         for (Notes note : allNotes)
-            list += note.getTitle() + ", ";
-        return list;
+            list.append(note.getTitle()).append(", ");
+        return list.toString();
     }
 }

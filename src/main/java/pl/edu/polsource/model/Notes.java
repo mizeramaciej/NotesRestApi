@@ -11,9 +11,6 @@ import java.util.Date;
 })
 public class Notes {
 
-//    @Transient
-//    private static int counter=1;
-
     private final Date createdDate = new Date();
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -35,9 +32,6 @@ public class Notes {
     }
 
     public Notes(String title, String content) {
-
-//        this.ID=counter++;
-
         this.title = title;
         this.content = content;
         this.lastModified = new Date();
